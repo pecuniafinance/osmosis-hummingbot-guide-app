@@ -1,0 +1,199 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap");
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-family: "Poppins", sans-serif;
+  font-optical-sizing: auto;
+
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+
+  --osmoverse: #140f34;
+  --osmoverse-100: #e4e1fb;
+  --osmoverse-200: #cec8f3;
+  --osmoverse-300: #b0aadc;
+  --osmoverse-400: #958fc0;
+  --osmoverse-500: #736ca3;
+  --osmoverse-600: #565081;
+  --osmoverse-700: #3c356d;
+  --osmoverse-800: #282750;
+  --osmoverse-810: #241e4b;
+  --osmoverse-825: #232047;
+  --osmoverse-850: #201b43;
+  --osmoverse-860: #19183a;
+  --osmoverse-900: #140f34;
+  --osmoverse-1000: #090524;
+
+  --rust: #c6451c;
+  --rust-200: #f8c2b0;
+  --rust-300: #f5a68c;
+  --rust-500: #fa825d;
+  --rust-600: #e06640;
+  --rust-700: #c6451c;
+  --rust-800: #b03a20;
+
+  --ammelia: #ca2ebd;
+  --ammelia-400: #d779cf;
+  --ammelia-600: #ca2ebd;
+
+  --bullish-100: #ebfffb;
+  --bullish-300: #95eede;
+  --bullish-400: #6bdec9;
+  --bullish-500: #29d0b2;
+  --bullish-600: #00a399;
+
+  --ion: #2994d0;
+  --ion-100: #dcf9ff;
+  --ion-300: #87ddf8;
+  --ion-400: #64c5ee;
+  --ion-500: #2994d0;
+  --ion-700: #1469af;
+
+  --wosmongton: #462adf;
+  --wosmongton-100: #d3d1ff;
+  --wosmongton-200: #b3b1fd;
+  --wosmongton-300: #8c8af9;
+  --wosmongton-400: #6a67ea;
+  --wosmongton-500: #5b57fa;
+  --wosmongton-700: #462adf;
+  --wosmongton-800: #361fb2;
+  --wosmongton-900: #2d1b8f;
+
+  --white-high: rgba(255, 255, 255, 0.95);
+  --white-emphasis: rgba(255, 255, 255, 0.87);
+  --white-mid: rgba(255, 255, 255, 0.6);
+  --white-disabled: rgba(255, 255, 255, 0.38);
+  --white-faint: rgba(255, 255, 255, 0.12);
+
+  --darkGrey: #282828;
+  --grey: #818181;
+  --lightGrey: #b7b7b7;
+
+  --error: #ef3456;
+  --missionError: #ef3456;
+  --superfluid: #8a86ff;
+  --supercharged: #64c5ee;
+  --transparent: transparent;
+  --black: #000;
+  --barFill: #4f4aa2;
+  --chartGradientPrimary: #c41bff;
+  --chartGradientSecondary: #1867ff;
+
+  --font-xxs: 0.5rem;
+  --font-xs: 0.75rem;
+  --font-sm: 0.875rem;
+  --font-base: 1rem;
+  --font-lg: 1.25rem;
+  --font-xl: 1.5rem;
+  --font-2xl: 2.25rem;
+  --font-3xl: 3rem;
+  --font-4xl: 3.75rem;
+  --font-5xl: 6rem;
+  --spacing-sidebar: 14.58rem;
+  --spacing-mobile-header: 6rem;
+  --spacing-0-25: 1px;
+  --spacing-4-5: 18px;
+  --spacing-10-5: 2.625rem;
+  --spacing-13: 3.25rem;
+  --boxShadow: 0px -1px 0px 0px rgba(255, 255, 255, 0.12);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+a:link,
+a:hover,
+a:visited {
+  color: inherit;
+  border: none;
+}
+
+.pfpurpleText {
+  color: #542a56;
+}
+
+.osmosis-logo-font {
+  font-weight: 700;
+  color: #fff;
+}
+
+.App {
+  width: 100vw;
+  height: 100%;
+  min-height: 100vh;
+  background-color: var(--osmoverse);
+  scroll-snap-type: y mandatory;
+  scroll-behavior: smooth;
+}
+
+.Container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+}
+
+/*...MOBILE FORMATTING.......must be last........................................*/
+
+@media (max-width: 800px) {
+}
+
+/* 
+
+
+
+
+
+
+h1: ["6rem", { lineHeight: "7rem", letterSpacing: "-1.5px" }],
+h2: ["3.75rem", { lineHeight: "4.5rem", letterSpacing: "-0.5px" }],
+h3: ["3rem", { lineHeight: "3.5rem", letterSpacing: "0" }],
+h4: ["2.25rem", { lineHeight: "2.25rem", letterSpacing: "0" }],
+h5: ["1.5rem", { lineHeight: "2rem", letterSpacing: "0.18px" }],
+h6: ["1.25rem", { lineHeight: "1.5rem", letterSpacing: "0.15px" }],
+
+
+
+    ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #231d4b00;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-osmoverse-600;
+    border-radius: 18px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #666;
+  }
+  ::-webkit-scrollbar-corner {
+    background: rgba(0, 0, 0, 0);
+  }
+
+  html {
+    font-family: Inter, ui-sans-serif, system-ui;
+    @apply text-white-full;
+
+ 
+
+  /images/osmosis-home-bg-pattern.svg
+
+  font poppins */
