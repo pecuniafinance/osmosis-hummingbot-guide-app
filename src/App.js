@@ -1,14 +1,15 @@
 import React, { useState } from "react";
-import "./global.css";
+import "./css/global.css";
+import { Flex } from "./css/global.css";
 import styled, { createGlobalStyle } from "styled-components";
 import bg from "./imgs/osmosis-bg.svg";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Home from "./pages/Home";
 import Install from "./pages/Install";
 import Setup from "./pages/Setup";
 import Create from "./pages/Create";
 import Specs from "./pages/Specs";
 import StyledNavbar from "./components/Navbar";
+import HomePage from "./pages/HomePage";
 
 const Container = styled.div`
   // color: var(--ammelia-400);
@@ -23,7 +24,7 @@ const Container = styled.div`
   // background-color: red;
   position: relative;
   display: flex;
-  flex-direction: column;
+  // flex-direction: column;
 `;
 
 const Styles = {
@@ -61,7 +62,7 @@ function App() {
       <Container>
         <StyledNavbar />
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          <Route exact path="/" element={<HomePage />} />
           <Route exact path="/install" element={<Install />} />
           <Route exact path="/setup" element={<Setup />} />
           <Route exact path="/create-strategy" element={<Create />} />

@@ -115,11 +115,13 @@ code {
     monospace;
 }
 
+a,
 a:link,
 a:hover,
 a:visited {
   color: inherit;
   border: none;
+  text-decoration: none;
 }
 
 .pfpurpleText {
