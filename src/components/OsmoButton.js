@@ -11,8 +11,21 @@ const Button = styled.button`
   background-color: var(--wosmongton);
   color: var(--white-high);
   border-radius: 10px;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--wosmongton-800);
+    color: ver(--white-emphasis);
+  }
+  &:active {
+    background-color: var(--wosmongton);
+    color: var(--white-high);
+  }
 `;
 
-export default function OsmoButton({ text, textSize }) {
-  return <Button style={{ fontSize: textSize }}>{text}</Button>;
+export default function OsmoButton({ text, textSize, onClick }) {
+  return (
+    <Button onClick={onClick} style={{ fontSize: textSize }}>
+      {text}
+    </Button>
+  );
 }

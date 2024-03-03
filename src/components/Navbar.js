@@ -81,6 +81,7 @@ const Navbar = {
     ${Flex}
     flex-direction: column;
     list-style: none;
+    align-items: left;
     gap: 10px;
     padding: 0;
     margin: 0;
@@ -108,7 +109,7 @@ const Navbar = {
     }
   `,
   Item: styled.li`
-    min-width: 100%;
+    width: 100%;
     padding: 0;
     margin: 0;
     ${Flex}
@@ -148,6 +149,10 @@ const Navbar = {
       // background-color: var(--osmoverse-500);
     }
   `,
+
+  LinkStyle: {
+    width: "100%",
+  },
 };
 
 const HamburgerButton = {
@@ -221,26 +226,36 @@ function StyledNavbar() {
       </Navbar.Text>
       <Navbar.Logo src={logo} alt="logo" />
       <Navbar.Items ref={drawerRef} openDrawer={openDrawer}>
-        <Navbar.Item>
-          <HiHome size="20" />
-          <Link to="/">Home</Link>
-        </Navbar.Item>
-        <Navbar.Item>
-          <RiInstallFill size="20" />
-          <Link to="/install">Install</Link>
-        </Navbar.Item>
-        <Navbar.Item>
-          <FaHatWizard size="20" />
-          <Link to="/setup">Setup</Link>
-        </Navbar.Item>
-        <Navbar.Item>
-          <IoIosCreate size="20" />
-          <Link to="/create-strategy">Run</Link>
-        </Navbar.Item>
-        <Navbar.Item>
-          <BsClipboard2DataFill size="20" />
-          <Link to="/technical">Technical</Link>
-        </Navbar.Item>
+        <Link to="/" style={Navbar.LinkStyle}>
+          <Navbar.Item>
+            <HiHome size="20" />
+            Home
+          </Navbar.Item>
+        </Link>
+        <Link to="/install" style={Navbar.LinkStyle}>
+          <Navbar.Item>
+            <RiInstallFill size="20" />
+            Install
+          </Navbar.Item>
+        </Link>
+        <Link to="/setup" style={Navbar.LinkStyle}>
+          <Navbar.Item>
+            <FaHatWizard size="20" />
+            Setup
+          </Navbar.Item>
+        </Link>
+        <Link to="/create-strategy" style={Navbar.LinkStyle}>
+          <Navbar.Item>
+            <IoIosCreate size="20" />
+            Run
+          </Navbar.Item>
+        </Link>
+        <Link to="/technical" style={Navbar.LinkStyle}>
+          <Navbar.Item>
+            <BsClipboard2DataFill size="20" />
+            Technical
+          </Navbar.Item>
+        </Link>
       </Navbar.Items>
       <Navbar.Text className="credit">
         <h2>
