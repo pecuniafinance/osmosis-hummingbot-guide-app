@@ -15,34 +15,29 @@ export const Page = {
     justify-content: flex-start;
     overflow-y: auto;
     gap: 20px;
-    padding-top: 20px;
+    padding: 20px 0px;
     @media (max-width: 800px) {
-      padding-bottom: 150px;
+      padding-bottom: 180px;
     }
   `,
   Wrapper: styled.div`
     min-width: 50vw;
-    max-width: 95%;
-    // min-height: 400px;
-    ${Flex}
+    width: 95%;
+    display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: left;
-    border-radius: 50px;
+    border-radius: 25px;
     background-color: var(--osmoverse-850);
-    // margin: auto;
     color: var(--white-high);
     text-align: left;
     text-wrap: wrap;
-    padding: 10px 20px;
+    padding: 1% 3%;
     a {
       color: var(--ammelia-600);
     }
-    code {
-      white-space: wrap;
-      @media (max-width: 800px) {
-        font-size: 10px;
-      }
+    img {
+      border-radius: 6px;
     }
   `,
 };

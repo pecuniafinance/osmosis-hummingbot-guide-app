@@ -65,7 +65,7 @@ function App() {
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/install" element={<Install />} />
           <Route exact path="/setup" element={<Setup />} />
-          <Route exact path="/create-strategy" element={<Create />} />
+          <Route exact path="/run" element={<Create />} />
           <Route exact path="/technical" element={<Specs />} />
         </Routes>
       </Container>

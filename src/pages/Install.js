@@ -14,7 +14,7 @@ The recommended method of installing and using Hummingbot & Gateway is with Dock
 > 
 > 💡 Windows users can find instructions here: [https://docs.docker.com/desktop/install/windows-install/](https://docs.docker.com/desktop/install/windows-install/)
 
-### Steps
+### Steps to Install Hummingbot & Gateway
 
 1. Install **Docker**
 2. Install **hummingbot/deploy-examples.git**
@@ -39,6 +39,7 @@ exit
 > ~~~bash 
 > docker compose version
 > ~~~
+
 > ⤵️ You can use **sudo apt-get update && install docker-compose-plugin** to install Docker Compose alone.
 > ~~~bash 
 > sudo apt-get update && install docker-compose-plugin
@@ -53,8 +54,8 @@ Hummingbot offers several configurations of Docker containers in a repository ca
 We will focus on **hummingbot_gateway_compose**, which loads a Hummingbot container and a Gateway container together. 
 
 
-> 💡 Learn about the other containers here: [https://docs.hummingbot.org/installation/docker/#deployment-types](https://docs.hummingbot.org/installation/docker/#deployment-types)
-
+> 💡 Learn about the other containers here: 
+> [https://docs.hummingbot.org/installation/docker/#deployment-types](https://docs.hummingbot.org/installation/docker/#deployment-types)
 
 
 1. From terminal, navigate to the folder where you want to run Hummingbot from.
@@ -99,10 +100,10 @@ function Install() {
       </Page.Wrapper>
       <Page.Wrapper>
         <Markdown>{markdown2}</Markdown>
-        <Link to="/setup">
-          <OsmoButton text="Next: SETUP" textSize="14px" />
-        </Link>
       </Page.Wrapper>
+      <Link to="/setup">
+        <OsmoButton text="NEXT ➡ SETUP" textSize="14px" />
+      </Link>
     </Page.Container>
   );
 }

@@ -244,7 +244,7 @@ function StyledNavbar() {
             Setup
           </Navbar.Item>
         </Link>
-        <Link to="/create-strategy" style={Navbar.LinkStyle}>
+        <Link to="/run" style={Navbar.LinkStyle}>
           <Navbar.Item>
             <IoIosCreate size="20" />
             Run

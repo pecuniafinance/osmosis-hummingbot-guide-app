@@ -113,6 +113,16 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+  font-size: 1em;
+  white-space: pre-line;
+  background-color: var(--osmoverse-800);
+  border-radius: 3px;
+}
+
+blockquote {
+  background-color: var(--osmoverse-700);
+  border-radius: 15px;
+  padding: 0 10px;
 }
 
 a,
@@ -155,6 +165,12 @@ a:visited {
 /*...MOBILE FORMATTING.......must be last........................................*/
 
 @media (max-width: 800px) {
+  code {
+    font-size: 12px;
+  }
+  blockquote {
+    margin: 4px 5px;
+  }
 }
 
 /* 
