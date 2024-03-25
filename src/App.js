@@ -6,8 +6,8 @@ import bg from "./imgs/osmosis-bg.svg";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Install from "./pages/Install";
 import Setup from "./pages/Setup";
-import Create from "./pages/Create";
-import Specs from "./pages/Specs";
+import RunStrat from "./pages/RunStrat";
+import Technical from "./pages/Technical";
 import StyledNavbar from "./components/Navbar";
 import HomePage from "./pages/HomePage";
 
@@ -65,8 +65,8 @@ function App() {
           <Route exact path="/" element={<HomePage />} />
           <Route exact path="/install" element={<Install />} />
           <Route exact path="/setup" element={<Setup />} />
-          <Route exact path="/run" element={<Create />} />
-          <Route exact path="/technical" element={<Specs />} />
+          <Route exact path="/run" element={<RunStrat />} />
+          <Route exact path="/technical" element={<Technical />} />
         </Routes>
       </Container>
     </Router>

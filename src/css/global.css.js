@@ -39,5 +39,9 @@ export const Page = {
     img {
       border-radius: 6px;
     }
+    &.homepageStyles {
+      align-items: center;
+      gap: 20px;
+    }
   `,
 };

@@ -115,12 +115,14 @@ code {
     monospace;
   font-size: 1em;
   white-space: pre-line;
-  background-color: var(--osmoverse-800);
+  background-color: var(--osmoverse-700);
+  color: var(--bullish-500);
   border-radius: 3px;
 }
 
 blockquote {
-  background-color: var(--osmoverse-700);
+  background-color: var(--wosmongton-900);
+  color: var(--wosmongton-100);
   border-radius: 15px;
   padding: 0 10px;
 }
