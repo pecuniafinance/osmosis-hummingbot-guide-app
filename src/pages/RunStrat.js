@@ -44,7 +44,7 @@ const markdown2 = `
 
 ## Create New Strategy
 
-1. Use **create** command to set up an [**amm_arb**](https://docs.hummingbot.org/strategies/amm-arbitrage/) or [**amm_v3_lp**](https://docs.hummingbot.org/strategies/amm-v3-lp/) type of [strategy](https://docs.hummingbot.org/strategies/). 
+1. Use **create** command to set up an [**amm_arb**](https://docs.hummingbot.org/strategies/amm-arbitrage/) or [**amm_v3_lp**](https://docs.hummingbot.org/strategies/amm-v3-lp/) type of [V1 Strategy](https://hummingbot.org/v1-strategies/). 
 
 ~~~bash
 >>> create

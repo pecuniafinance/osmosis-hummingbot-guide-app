@@ -37,7 +37,18 @@ export default function HomePage() {
             )
           }
         />
-        <br />
+        <ul>
+          <header>
+            Please note: In the following guide, code segments are shown in two
+            different ways:
+          </header>
+          <li>
+            <b>$</b> indicates a CLI Terminal command.
+          </li>
+          <li>
+            <b>{">>>"}</b> indicates a Hummingbot client command.
+          </li>
+        </ul>
       </Page.Wrapper>
       <Link to="/install">
         <OsmoButton text="START HERE" textSize="14px" />

@@ -112,7 +112,7 @@ Broader and more detailed information including socials, websites, and docs.
 
 - Website: [https://hummingbot.org/](https://hummingbot.org/)
 - Discord: [https://discord.gg/hummingbot](https://discord.gg/hummingbot)
-- Github: [https://github.com/hummingbot/hummingbot](https://github.com/hummingbot/hummingbot)
+- Github: [https://github.com/hummingbot/](https://github.com/hummingbot/)
 - Advanced features docs: [https://hummingbot.org/developers/commands/](https://hummingbot.org/developers/commands/)
 - Strategy Parameters docs: [https://hummingbot.org/client/config-files/](https://hummingbot.org/client/config-files/)
 - Dashboard for managing multiple instances: [https://hummingbot.org/dashboard/](https://hummingbot.org/dashboard/)

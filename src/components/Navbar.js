@@ -24,8 +24,8 @@ const Navbar = {
     background-color: var(--osmoverse-850);
 
     @media only screen and (max-width: 40em) {
-      height: 20vh;
-      min-height: 20vh;
+      height: 10%;
+      min-height: 100px;
       flex-direction: row;
       justify-content: space-around;
       position: fixed;

@@ -17,7 +17,7 @@ export const Page = {
     gap: 20px;
     padding: 20px 0px;
     @media (max-width: 800px) {
-      padding-bottom: 180px;
+      padding-bottom: 120px;
     }
   `,
   Wrapper: styled.div`
@@ -41,7 +41,19 @@ export const Page = {
     }
     &.homepageStyles {
       align-items: center;
-      gap: 20px;
+      gap: 10px;
+      ul {
+        list-style-position: inside;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        li {
+          padding-left: 20px;
+        }
+      }
+    }
+    @media (max-width: 800px) {
+      font-size: 12px;
     }
   `,
 };
